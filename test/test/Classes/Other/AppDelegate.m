@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [FCViewController new];
+    self.window.rootViewController = [NSClassFromString(@"FCViewController") new];
     [self.window makeKeyAndVisible];
     return YES;
 }
