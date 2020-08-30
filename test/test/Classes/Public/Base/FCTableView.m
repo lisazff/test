@@ -10,12 +10,18 @@
 
 @implementation FCTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
++ (instancetype)tableView {
+    FCTableView *view = [[FCTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    view.separatorStyle = UITableViewCellAccessoryNone;
+    view.backgroundColor = FCRandomColor;
+    view.estimatedRowHeight = 50;
+    view.rowHeight = UITableViewAutomaticDimension;
+    //view.estimatedRowHeight = 0;
+    view.estimatedSectionHeaderHeight = 0;
+    view.estimatedSectionFooterHeight = 0;
+//    if(@available(iOS 11.0, *)) {
+//        view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    }
+    return view;;
 }
-*/
-
 @end

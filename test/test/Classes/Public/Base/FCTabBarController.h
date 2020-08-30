@@ -10,6 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface FCViewControllerModel : NSObject
+@property (nonatomic, copy) NSString *className;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *normalImage;
+@property (nonatomic, copy) NSString *selectedImage;
+
+@end
+
 @interface FCTabBarController : UITabBarController
 
 @end

@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FCTableViewCell : UITableViewCell
-
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+- (void)setupUI;
 @end
 
 NS_ASSUME_NONNULL_END

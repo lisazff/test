@@ -7,6 +7,12 @@
 //
 
 #import "FCTabBarController.h"
+#import "FCNavigationController.h"
+
+@implementation FCViewControllerModel
+@end
+
+// ========== ========== ========== ========== ==========
 
 @interface FCTabBarController ()
 
@@ -16,17 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    FCViewControllerModel *model = [FCViewControllerModel new];
+    model.className = @"FCHomeViewController";
+    model.title = @"首页";
+    model.normalImage = @"";
+    model.selectedImage = @"";
+    [self addChildViewControllerModel:model];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addChildViewControllerModel:(FCViewControllerModel *)model {
+    
+    UIViewController *vc = [NSClassFromString(model.className) new];
+    vc.title = model.title;
+    FCNavigationController *nc = [[FCNavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nc];
 }
-*/
-
 @end

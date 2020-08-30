@@ -14,10 +14,18 @@
 
 @implementation FCViewController
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.automaticallyAdjustsScrollViewInsets = false;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor grayColor];
+    //init
+    self.view.backgroundColor = FCRandomColor;
 }
 
 @end

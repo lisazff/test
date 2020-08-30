@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361027A124BCB6590006DDB1 /* FCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361027A024BCB6590006DDB1 /* FCHomeViewController.m */; };
+		362A828924D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 362A828824D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.m */; };
+		362A829224D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 362A829124D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.m */; };
+		362A829924D1D9CC00DB9C54 /* FCAutoHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 362A829824D1D9CC00DB9C54 /* FCAutoHeightViewController.m */; };
 		36338A4724B3927000139F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36338A4624B3927000139F86 /* Assets.xcassets */; };
 		36338A4A24B3927000139F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36338A4824B3927000139F86 /* LaunchScreen.storyboard */; };
 		36338A6C24B3928900139F86 /* FCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 36338A5824B3928800139F86 /* FCUtils.m */; };
@@ -24,6 +28,14 @@
 
 /* Begin PBXFileReference section */
 		31943A0CB1C71A15EFC93AC9 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3610279F24BCB6590006DDB1 /* FCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCHomeViewController.h; sourceTree = "<group>"; };
+		361027A024BCB6590006DDB1 /* FCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCHomeViewController.m; sourceTree = "<group>"; };
+		362A828724D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAutoHeightTableViewCell.h; sourceTree = "<group>"; };
+		362A828824D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAutoHeightTableViewCell.m; sourceTree = "<group>"; };
+		362A829024D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAutoHeightCollectionViewCell.h; sourceTree = "<group>"; };
+		362A829124D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAutoHeightCollectionViewCell.m; sourceTree = "<group>"; };
+		362A829724D1D9CC00DB9C54 /* FCAutoHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCAutoHeightViewController.h; sourceTree = "<group>"; };
+		362A829824D1D9CC00DB9C54 /* FCAutoHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCAutoHeightViewController.m; sourceTree = "<group>"; };
 		36338A3724B3926F00139F86 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36338A4624B3927000139F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36338A4924B3927000139F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +60,7 @@
 		36338A6924B3928900139F86 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36338A6A24B3928900139F86 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		36338A6B24B3928900139F86 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		36338A7724B62BA600139F86 /* FCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCMacro.h; sourceTree = "<group>"; };
 		37621C57446386611DD00650 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		50F745CEE9CD7A538710EFF8 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +92,44 @@
 				50F745CEE9CD7A538710EFF8 /* Pods-test.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3610279D24BCB6290006DDB1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3610279E24BCB6390006DDB1 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3610279E24BCB6390006DDB1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3610279F24BCB6590006DDB1 /* FCHomeViewController.h */,
+				361027A024BCB6590006DDB1 /* FCHomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		362A829624D1D98500DB9C54 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3632A91224FC01B800997E62 /* UITableViewCell高度自适应 */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3632A91224FC01B800997E62 /* UITableViewCell高度自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				362A829724D1D9CC00DB9C54 /* FCAutoHeightViewController.h */,
+				362A829824D1D9CC00DB9C54 /* FCAutoHeightViewController.m */,
+				362A828724D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.h */,
+				362A828824D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.m */,
+				362A829024D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.h */,
+				362A829124D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.m */,
+			);
+			path = "UITableViewCell高度自适应";
 			sourceTree = "<group>";
 		};
 		36338A2E24B3926F00139F86 = {
@@ -113,6 +164,8 @@
 		36338A5324B3928800139F86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				362A829624D1D98500DB9C54 /* Test */,
+				3610279D24BCB6290006DDB1 /* Home */,
 				36338A5624B3928800139F86 /* Public */,
 				36338A5524B3928800139F86 /* Other */,
 			);
@@ -142,6 +195,7 @@
 		36338A5724B3928800139F86 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				36338A7724B62BA600139F86 /* FCMacro.h */,
 				36338A5924B3928800139F86 /* FCUtils.h */,
 				36338A5824B3928800139F86 /* FCUtils.m */,
 			);
@@ -284,15 +338,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				36338A7224B3928900139F86 /* FCViewController.m in Sources */,
+				362A828924D1D6CC00DB9C54 /* FCAutoHeightTableViewCell.m in Sources */,
 				36338A7324B3928900139F86 /* FCCollectionViewCell.m in Sources */,
 				36338A7024B3928900139F86 /* FCTableView.m in Sources */,
+				362A829924D1D9CC00DB9C54 /* FCAutoHeightViewController.m in Sources */,
 				36338A6F24B3928900139F86 /* FCTabBarController.m in Sources */,
 				36338A7524B3928900139F86 /* AppDelegate.m in Sources */,
 				36338A7124B3928900139F86 /* FCNavigationController.m in Sources */,
 				36338A6D24B3928900139F86 /* FCTableViewCell.m in Sources */,
 				36338A6C24B3928900139F86 /* FCUtils.m in Sources */,
+				362A829224D1D7F800DB9C54 /* FCAutoHeightCollectionViewCell.m in Sources */,
 				36338A7424B3928900139F86 /* main.m in Sources */,
 				36338A6E24B3928900139F86 /* FCCollectionView.m in Sources */,
+				361027A124BCB6590006DDB1 /* FCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
